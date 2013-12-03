@@ -1,8 +1,8 @@
 {
     "name": "co-easymongo"
   , "version": "0.0.1"
-  , "description": ""
-  , "keywords": [""]
+  , "description": "Easymongo API work with co"
+  , "keywords": ["easymongo", "co", "mongo", "mongodb", "generator"]
   , "author": "Alexey Simonenko <alexey@simonenko.su>"
   , "main": "./lib/index"
   , "repository": {
