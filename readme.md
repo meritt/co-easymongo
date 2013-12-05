@@ -11,8 +11,7 @@ $ npm install co-easymongo
 ## Examples
 
 ```js
-var options = {db: 'test'};
-var mongo = require('co-easymongo')(options);
+var mongo = require('co-easymongo')({dbname: 'test'});
 
 // array of documents
 var posts = yield mongo.find('posts', {title: 'Some title'}, {limit: 2});
@@ -21,7 +20,7 @@ var posts = yield mongo.find('posts', {title: 'Some title'}, {limit: 2});
 var post = yield mongo.save('posts', {title: 'Some title', text: 'Some text'});
 
 // deleted document
-var result = yield mongo.remove('posts', '4e4e1638c85e808431000003');
+var result = yield mongo.remove('posts', {title: 'Some title'});
 ```
 
 ## Author
