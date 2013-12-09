@@ -1,5 +1,7 @@
 # co-easymongo
 
+[![NPM version](https://badge.fury.io/js/co-easymongo.png)](http://badge.fury.io/js/co-easymongo) [![Dependency Status](https://david-dm.org/yamb/co-easymongo.png)](https://david-dm.org/yamb/co-easymongo)
+
 Implementation of [easymongo](https://github.com/meritt/easymongo) that works with [co](https://github.com/visionmedia/co).
 
 ## Installation
