@@ -10,9 +10,10 @@
       , "url": "https://github.com/yamb/co-easymongo.git"
     }
   , "engines": {
-      "node": "0.11.x"
+      "node": "~0.11"
     }
   , "dependencies": {
       "easymongo": "2.x"
     }
+  , "license": "MIT"
 }
