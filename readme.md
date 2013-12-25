@@ -6,7 +6,7 @@ Implementation of [easymongo](https://github.com/meritt/easymongo) that works wi
 
 ## Installation
 
-```
+```bash
 $ npm install co-easymongo
 ```
 
@@ -32,3 +32,5 @@ var result = yield mongo.remove('posts', {title: 'Some title'});
 ## License
 
 The MIT License, see the included `license.md` file.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/yamb/co-easymongo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
