@@ -1,0 +1,16 @@
+{
+    "node": true
+  , "esnext": true
+  , "browser": false
+  , "laxbreak": true
+  , "camelcase": false
+  , "newcap": false
+  , "smarttabs": true
+  , "eqeqeq": true
+  , "immed": true
+  , "latedef": true
+  , "undef": true
+  , "trailing": true
+  , "noempty": true
+  , "unused": true
+}
