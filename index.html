@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>co-easymongo by yamb</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">co-easymongo</h1>
+        <p class="header">Co-based easymongo</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/yamb/co-easymongo/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/yamb/co-easymongo/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/yamb/co-easymongo">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/yamb">yamb</a></p>
+
+
+      </header>
+      <section>
+        <p><a href="http://badge.fury.io/js/co-easymongo"><img src="https://badge.fury.io/js/co-easymongo.png" alt="NPM version"></a> <a href="https://travis-ci.org/yamb/co-easymongo"><img src="https://travis-ci.org/yamb/co-easymongo.png?branch=master" alt="Build Status"></a> <a href="https://david-dm.org/yamb/co-easymongo"><img src="https://david-dm.org/yamb/co-easymongo.png" alt="Dependency Status"></a> <a href="https://david-dm.org/yamb/co-easymongo#info=devDependencies"><img src="https://david-dm.org/yamb/co-easymongo/dev-status.png" alt="devDependency Status"></a></p>
+
+<p>Implementation of <a href="https://github.com/meritt/easymongo">easymongo</a> that works with <a href="https://github.com/visionmedia/co">co</a>.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<div class="highlight highlight-bash"><pre><span class="nv">$ </span>npm install co-easymongo
+</pre></div>
+
+<h2>
+<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h2>
+
+<div class="highlight highlight-js"><pre><span class="kd">var</span> <span class="nx">mongo</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'co-easymongo'</span><span class="p">)({</span><span class="nx">dbname</span><span class="o">:</span> <span class="s1">'test'</span><span class="p">});</span>
+
+<span class="c1">// array of documents</span>
+<span class="kd">var</span> <span class="nx">posts</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">mongo</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'posts'</span><span class="p">,</span> <span class="p">{</span><span class="nx">title</span><span class="o">:</span> <span class="s1">'Some title'</span><span class="p">},</span> <span class="p">{</span><span class="nx">limit</span><span class="o">:</span> <span class="mi">2</span><span class="p">});</span>
+
+<span class="c1">// new document</span>
+<span class="kd">var</span> <span class="nx">post</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">mongo</span><span class="p">.</span><span class="nx">save</span><span class="p">(</span><span class="s1">'posts'</span><span class="p">,</span> <span class="p">{</span><span class="nx">title</span><span class="o">:</span> <span class="s1">'Some title'</span><span class="p">,</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">'Some text'</span><span class="p">});</span>
+
+<span class="c1">// result of operation (boolean)</span>
+<span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">mongo</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">'posts'</span><span class="p">,</span> <span class="p">{</span><span class="nx">title</span><span class="o">:</span> <span class="s1">'Some title'</span><span class="p">});</span>
+</pre></div>
+
+<h2>
+<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h2>
+
+<ul>
+<li>
+<a href="mailto:alexey@simonenko.su">Alexey Simonenko</a>, <a href="http://simonenko.su">simonenko.su</a>
+</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>The MIT License, see the included <code>license.md</code> file.</p>
+
+<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/yamb/co-easymongo/trend.png" alt="Bitdeli Badge"></a></p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-37507032-12");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
