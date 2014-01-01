@@ -13,7 +13,8 @@
       "node": "~0.11"
     }
   , "dependencies": {
-      "easymongo": "~2.0"
+        "thunkify": "0.0.1"
+      , "easymongo": "~2.0"
     }
   , "devDependencies": {
         "jshint": "~2.4"
