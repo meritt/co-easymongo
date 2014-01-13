@@ -14,18 +14,17 @@
     }
   , "dependencies": {
         "thunkify": "0.0.1"
-      , "easymongo": "~2.0"
+      , "easymongo": "~3.0"
     }
   , "devDependencies": {
         "jshint": "~2.4"
-      , "mocha": "1.16.x"
-      , "should": "2.1.x"
+      , "mocha": "~1.17"
+      , "should": "~2.1"
       , "co": "~3.0"
     }
   , "scripts": {
-        "jshint": "./node_modules/.bin/jshint lib"
-      , "mocha": "./node_modules/.bin/mocha --harmony --reporter dot"
-      , "test": "npm run jshint && npm run mocha"
+        "pretest": "./node_modules/.bin/jshint lib"
+      , "test": "./node_modules/.bin/mocha --harmony --reporter dot"
     }
   , "license": "MIT"
 }
