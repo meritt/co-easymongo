@@ -15,11 +15,11 @@ $ npm install co-easymongo
 ## Examples
 
 ```js
-var options = {
-  dbname: 'test'
-};
+var co = require('co');
 
-var mongo = require('co-easymongo')(options);
+var mongo = require('co-easymongo')({
+  dbname: 'test'
+});
 
 co(function *() {
   var posts = mongo.collection('posts');
@@ -35,7 +35,7 @@ co(function *() {
 })();
 ```
 
-To figure which API are available, you need to read the [readme in the easymongo](https://github.com/meritt/easymongo#api).
+To figure which of APIs are available, you need to read the [easymongo readme](https://github.com/meritt/easymongo#api).
 
 ## Author
 
