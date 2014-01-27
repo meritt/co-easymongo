@@ -1,6 +1,6 @@
 {
     "name": "co-easymongo"
-  , "version": "0.2.0"
+  , "version": "0.2.1"
   , "description": "Co-based easymongo"
   , "keywords": ["easymongo", "mongo", "mongodb", "co", "generators"]
   , "author": "Alexey Simonenko <alexey@simonenko.su>"
