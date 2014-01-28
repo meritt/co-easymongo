@@ -1,6 +1,6 @@
 # co-easymongo
 
-[![NPM version](https://badge.fury.io/js/co-easymongo.png)](http://badge.fury.io/js/co-easymongo) [![Build Status](https://travis-ci.org/yamb/co-easymongo.png?branch=master)](https://travis-ci.org/yamb/co-easymongo) [![Dependency Status](https://david-dm.org/yamb/co-easymongo.png)](https://david-dm.org/yamb/co-easymongo) [![devDependency Status](https://david-dm.org/yamb/co-easymongo/dev-status.png)](https://david-dm.org/yamb/co-easymongo#info=devDependencies)
+[![NPM version](https://badge.fury.io/js/co-easymongo.png)](http://badge.fury.io/js/co-easymongo) [![Build Status](https://travis-ci.org/meritt/co-easymongo.png?branch=master)](https://travis-ci.org/meritt/co-easymongo) [![Dependency Status](https://david-dm.org/meritt/co-easymongo.png)](https://david-dm.org/meritt/co-easymongo) [![devDependency Status](https://david-dm.org/meritt/co-easymongo/dev-status.png)](https://david-dm.org/meritt/co-easymongo#info=devDependencies)
 
 Implementation of the [easymongo](https://github.com/meritt/easymongo) with generator based flow-control.
 
@@ -45,4 +45,4 @@ To figure which of APIs are available, you need to read the [easymongo readme](h
 
 The MIT License, see the included `license.md` file.
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/yamb/co-easymongo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/meritt/co-easymongo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
