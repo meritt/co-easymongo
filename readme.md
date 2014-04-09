@@ -1,6 +1,6 @@
 # co-easymongo
 
-[![NPM version](https://badge.fury.io/js/co-easymongo.png)](http://badge.fury.io/js/co-easymongo) [![Build Status](https://travis-ci.org/meritt/co-easymongo.png?branch=master)](https://travis-ci.org/meritt/co-easymongo) [![Dependency Status](https://david-dm.org/meritt/co-easymongo.png)](https://david-dm.org/meritt/co-easymongo) [![devDependency Status](https://david-dm.org/meritt/co-easymongo/dev-status.png)](https://david-dm.org/meritt/co-easymongo#info=devDependencies)
+[![NPM version](https://badge.fury.io/js/co-easymongo.svg)](http://badge.fury.io/js/co-easymongo) [![Build Status](https://travis-ci.org/meritt/co-easymongo.svg?branch=master)](https://travis-ci.org/meritt/co-easymongo) [![Dependency Status](https://david-dm.org/meritt/co-easymongo.svg?theme=shields.io)](https://david-dm.org/meritt/co-easymongo) [![devDependency Status](https://david-dm.org/meritt/co-easymongo/dev-status.svg?theme=shields.io)](https://david-dm.org/meritt/co-easymongo#info=devDependencies)
 
 Implementation of the [easymongo](https://github.com/meritt/easymongo) with generator based flow-control.
 
