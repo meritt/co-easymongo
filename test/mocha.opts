@@ -1,4 +1,8 @@
 --reporter spec
 --require should
+--require test/helpers/co-mocha
+--timeout 5000
 --bail
 --check-leaks
+
+test/index.js
