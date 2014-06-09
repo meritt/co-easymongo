@@ -14,13 +14,13 @@
     }
   , "dependencies": {
         "thunkify": "1.0.x"
-      , "easymongo": "~3.3"
+      , "easymongo": "~3.3.1"
     }
   , "devDependencies": {
         "jshint": "~2.5"
-      , "mocha": "~1.18"
-      , "should": "~3.3"
-      , "co": "~3.0.5"
+      , "mocha": "~1.20"
+      , "should": "~4.0.4"
+      , "co": "~3.0.6"
     }
   , "scripts": {
         "pretest": "./node_modules/.bin/jshint lib"
