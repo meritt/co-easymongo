@@ -1,6 +1,9 @@
 # co-easymongo
 
-[![NPM version](https://badge.fury.io/js/co-easymongo.svg)](http://badge.fury.io/js/co-easymongo) [![Build Status](https://travis-ci.org/meritt/co-easymongo.svg?branch=master)](https://travis-ci.org/meritt/co-easymongo) [![Dependency Status](https://david-dm.org/meritt/co-easymongo.svg?theme=shields.io)](https://david-dm.org/meritt/co-easymongo) [![devDependency Status](https://david-dm.org/meritt/co-easymongo/dev-status.svg?theme=shields.io)](https://david-dm.org/meritt/co-easymongo#info=devDependencies)
+[![NPM version][npm-image]][npm-url]
+[![Build status][travis-image]][travis-url]
+[![Dependency status][dependency-image]][dependency-url]
+[![devDependency status][devdependency-image]][devdependency-url]
 
 Implementation of the [easymongo](https://github.com/meritt/easymongo) with generator based flow-control.
 
@@ -39,10 +42,17 @@ To figure which of APIs are available, you need to read the [easymongo readme](h
 
 ## Author
 
-* [Alexey Simonenko](mailto:alexey@simonenko.su), [simonenko.su](http://simonenko.su)
+  - [Alexey Simonenko](https://github.com/meritt)
 
 ## License
 
 The MIT License, see the included `license.md` file.
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/meritt/co-easymongo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[npm-image]: https://img.shields.io/npm/v/co-easymongo.svg?style=flat
+[npm-url]: https://npmjs.org/package/co-easymongo
+[travis-image]: https://img.shields.io/travis/meritt/co-easymongo.svg?style=flat
+[travis-url]: https://travis-ci.org/meritt/co-easymongo
+[dependency-image]: https://img.shields.io/david/meritt/co-easymongo.svg?style=flat
+[dependency-url]: https://david-dm.org/meritt/co-easymongo
+[devdependency-image]: https://img.shields.io/david/dev/meritt/co-easymongo.svg?style=flat
+[devdependency-url]: https://david-dm.org/meritt/co-easymongo#info=devDependencies
