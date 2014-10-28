@@ -14,7 +14,7 @@
     }
   , "dependencies": {
         "thunkify": "~2.1.2"
-      , "easymongo": "~3.3.3"
+      , "easymongo": "~4.0.0"
     }
   , "devDependencies": {
         "jshint": "~2.5"
