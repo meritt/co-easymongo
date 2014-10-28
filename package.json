@@ -18,13 +18,13 @@
     }
   , "devDependencies": {
         "jshint": "~2.5"
-      , "mocha": "~1.21"
-      , "should": "~4.0.4"
+      , "mocha": "~2.0"
+      , "should": "~4.1"
       , "co": "~3.1"
     }
   , "scripts": {
-        "pretest": "./node_modules/.bin/jshint lib"
-      , "test": "./node_modules/.bin/mocha --harmony --reporter dot"
+        "pretest": "jshint lib"
+      , "test": "mocha --harmony --reporter dot"
     }
   , "license": "MIT"
 }
