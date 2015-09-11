@@ -5,14 +5,16 @@
 [![Dependency status][dependency-image]][dependency-url]
 [![devDependency status][devdependency-image]][devdependency-url]
 
+**Deprecated in favor of [easymongo](https://github.com/meritt/easymongo)**. Version 5 of easymongo now uses promises which nicely working with [co](https://github.com/tj/co).
+
 Implementation of the [easymongo](https://github.com/meritt/easymongo) with generator based flow-control.
 
-Currently you must use the `--harmony-generators` flag when running node 0.11.x to get access to generators.
+Currently you must use the `--harmony-generators` flag when running node 0.12.x to get access to generators.
 
 ## Installation
 
 ```bash
-$ npm install co-easymongo
+$ npm i --save co-easymongo
 ```
 
 ## Examples
