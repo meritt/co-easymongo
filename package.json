@@ -10,11 +10,11 @@
       , "url": "https://github.com/meritt/co-easymongo.git"
     }
   , "engines": {
-      "node": ">=0.11"
+      "node": "^0.12.7"
     }
   , "dependencies": {
         "thunkify": "~2.1.2"
-      , "easymongo": "~4.0.0"
+      , "easymongo": "4.0.2"
     }
   , "devDependencies": {
         "jshint": "~2.5"
