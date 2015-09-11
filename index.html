@@ -6,7 +6,7 @@
     <title>co-easymongo by meritt</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
@@ -35,55 +35,55 @@
 <a href="https://david-dm.org/meritt/co-easymongo"><img src="https://img.shields.io/david/meritt/co-easymongo.svg?style=flat" alt="Dependency status"></a>
 <a href="https://david-dm.org/meritt/co-easymongo#info=devDependencies"><img src="https://img.shields.io/david/dev/meritt/co-easymongo.svg?style=flat" alt="devDependency status"></a></p>
 
+<p><strong>Deprecated in favor of <a href="https://github.com/meritt/easymongo">easymongo</a></strong>. Version 5 of easymongo now uses promises which nicely working with <a href="https://github.com/tj/co">co</a>.</p>
+
 <p>Implementation of the <a href="https://github.com/meritt/easymongo">easymongo</a> with generator based flow-control.</p>
 
-<p>Currently you must use the <code>--harmony-generators</code> flag when running node 0.11.x to get access to generators.</p>
+<p>Currently you must use the <code>--harmony-generators</code> flag when running node 0.12.x to get access to generators.</p>
 
 <h2>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
 
-<div class="highlight highlight-bash"><pre><span class="nv">$ </span>npm install co-easymongo
-</pre></div>
+<div class="highlight highlight-bash"><pre>$ npm i --save co-easymongo</pre></div>
 
 <h2>
-<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h2>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examples</h2>
 
-<div class="highlight highlight-js"><pre><span class="kd">var</span> <span class="nx">co</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'co'</span><span class="p">);</span>
+<div class="highlight highlight-js"><pre><span class="pl-k">var</span> co <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>co<span class="pl-pds">'</span></span>);
 
-<span class="kd">var</span> <span class="nx">mongo</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'co-easymongo'</span><span class="p">)({</span>
-  <span class="nx">dbname</span><span class="o">:</span> <span class="s1">'test'</span>
-<span class="p">});</span>
+<span class="pl-k">var</span> mongo <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>co-easymongo<span class="pl-pds">'</span></span>)({
+  dbname<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>test<span class="pl-pds">'</span></span>
+});
 
-<span class="nx">co</span><span class="p">(</span><span class="kd">function</span> <span class="o">*</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">posts</span> <span class="o">=</span> <span class="nx">mongo</span><span class="p">.</span><span class="nx">collection</span><span class="p">(</span><span class="s1">'posts'</span><span class="p">);</span>
+co(<span class="pl-k">function</span> <span class="pl-k">*</span>() {
+  <span class="pl-k">var</span> posts <span class="pl-k">=</span> mongo.collection(<span class="pl-s"><span class="pl-pds">'</span>posts<span class="pl-pds">'</span></span>);
 
-  <span class="c1">// array of documents</span>
-  <span class="kd">var</span> <span class="nx">results</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">posts</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="nx">title</span><span class="o">:</span> <span class="s1">'Some title'</span><span class="p">},</span> <span class="p">{</span><span class="nx">limit</span><span class="o">:</span> <span class="mi">2</span><span class="p">});</span>
+  <span class="pl-c">// array of documents</span>
+  <span class="pl-k">var</span> results <span class="pl-k">=</span> <span class="pl-k">yield</span> posts.<span class="pl-c1">find</span>({title<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Some title<span class="pl-pds">'</span></span>}, {limit<span class="pl-k">:</span> <span class="pl-c1">2</span>});
 
-  <span class="c1">// new document</span>
-  <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">posts</span><span class="p">.</span><span class="nx">save</span><span class="p">({</span><span class="nx">title</span><span class="o">:</span> <span class="s1">'Some title'</span><span class="p">,</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">'Some text'</span><span class="p">});</span>
+  <span class="pl-c">// new document</span>
+  <span class="pl-k">var</span> result <span class="pl-k">=</span> <span class="pl-k">yield</span> posts.save({title<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Some title<span class="pl-pds">'</span></span>, text<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Some text<span class="pl-pds">'</span></span>});
 
-  <span class="c1">// result of operation (boolean)</span>
-  <span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">posts</span><span class="p">.</span><span class="nx">remove</span><span class="p">({</span><span class="nx">title</span><span class="o">:</span> <span class="s1">'Some title'</span><span class="p">});</span>
-<span class="p">})();</span>
-</pre></div>
+  <span class="pl-c">// result of operation (boolean)</span>
+  <span class="pl-k">var</span> result <span class="pl-k">=</span> <span class="pl-k">yield</span> posts.remove({title<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Some title<span class="pl-pds">'</span></span>});
+})();</pre></div>
 
 <p>To figure which of APIs are available, you need to read the <a href="https://github.com/meritt/easymongo#api">easymongo readme</a>.</p>
 
 <h2>
-<a name="author" class="anchor" href="#author"><span class="octicon octicon-link"></span></a>Author</h2>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h2>
 
 <ul>
 <li><a href="https://github.com/meritt">Alexey Simonenko</a></li>
 </ul>
 
 <h2>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>The MIT License, see the included <code>license.md</code> file.</p>
       </section>
       <footer>
-        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
